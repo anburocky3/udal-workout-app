@@ -1,0 +1,35 @@
+{
+  "name": "udal-healthy-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "oxlint .",
+    "format": "prettier --write . && prettier --write --plugin=prettier-plugin-tailwind-suggestions ."
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.112.3",
+    "@vercel/analytics": "^2.0.1",
+    "clsx": "^2.1.1",
+    "lucide-react": "^1.31.0",
+    "next": "16.3.1",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "tailwind-merge": "^3.6.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "babel-plugin-react-compiler": "1.0.0",
+    "oxlint": "^1.78.0",
+    "prettier": "^3.9.6",
+    "prettier-plugin-tailwind-suggestions": "^1.0.17",
+    "prettier-plugin-tailwindcss": "^0.8.1",
+    "tailwindcss": "^4.3.3",
+    "typescript": "^5"
+  }
+}
