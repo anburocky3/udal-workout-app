@@ -6,17 +6,24 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "sb:status": "cd src && npx supabase status",
+    "sb:start": "cd src && npx supabase start",
+    "sb:stop": "cd src && npx supabase stop",
+    "sb:push": "cd src && npx supabase db push",
     "lint": "oxlint .",
     "format": "prettier --write . && prettier --write --plugin=prettier-plugin-tailwind-suggestions ."
   },
   "dependencies": {
+    "@supabase/ssr": "^0.12.4",
     "@supabase/supabase-js": "^2.112.3",
     "@vercel/analytics": "^2.0.1",
     "clsx": "^2.1.1",
+    "install": "^0.13.0",
     "lucide-react": "^1.31.0",
     "next": "16.3.1",
     "react": "19.2.8",
     "react-dom": "19.2.8",
+    "recharts": "^3.10.1",
     "tailwind-merge": "^3.6.0"
   },
   "devDependencies": {

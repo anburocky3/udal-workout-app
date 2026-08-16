@@ -1,5 +1,4 @@
-import Image from 'next/image'
-import FatLossCalculatorApp from './FatLossCalculatorApp'
+import FatLossCalculatorApp from './UdalApp'
 
 export default function Home() {
   return (
