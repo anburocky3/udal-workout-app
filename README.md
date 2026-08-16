@@ -1,36 +1,115 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# உடல் (Udal) - The Regional Fat Loss & BMI Blueprint
 
-## Getting Started
+[![Stars](https://img.shields.io/github/stars/anburocky3/udal-workout-app)](https://github.com/anburocky3/udal-workout-app)
+[![Forks](https://img.shields.io/github/forks/anburocky3/udal-workout-app)](https://github.com/anburocky3/udal-workout-app)
+[![GitHub license](https://img.shields.io/github/license/anburocky3/udal-workout-app)](https://github.com/anburocky3/udal-workout-app)
+![Anbuselvan Rocky Twitter](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Fgithub.com%2Fanburocky3%2Fudal-workout-app)
+[![Support Server](https://img.shields.io/discord/742347296091537448.svg?label=Discord&logo=Discord&colorB=7289da)](https://discord.gg/6ktMR65YMy)
+[![Cyberdude youtube](https://img.shields.io/youtube/channel/subscribers/UCteUj8bL1ppZcS70UCWrVfw?style=social)](https://www.youtube.com/c/cyberdudenetworks)
 
-First, run the development server:
+**Udal** is a minimalist, mobile-first Web Application and PWA designed to demystify fat loss through strict thermodynamics and hyper-local dietary habits. Built specifically with South Asian genetics and Tamil Nadu regional cuisines in mind, it generates precise calorie deficits, macro splits, and tracks your weekly progression.
+
+## Screenshots
+
+![Screenshot 1](./docs/screenshots/1.png)
+
+## ✨ Core Features
+
+- **🧬 Scientific Formula Engine:**
+  - Calculates Maintenance (TDEE) and exact Calorie Deficits based on personalized weekly weight loss goals.
+  - Applies the Atwater General Factor System to accurately calculate caloric yields (Protein/Carb = 4 kcal/g, Fat = 9 kcal/g).
+- **⚖️ Asian/Indian BMI Standards:**
+  - Custom thresholds optimized for South Asian genetics where the healthy BMI range is strictly capped at 22.9 to account for regional visceral fat predispositions.
+- **🍛 Tamil Nadu Diet Integration:**
+  - Pre-calculated South Indian meal protocols (e.g., Kuthiraivali, Seeraga Samba Mutton, Neer Mor).
+  - Promotes the 50-25-25 macro plate ratio customized for local ingredients.
+- **✅ Gamified Daily Checklist:**
+  - Interactive daily goals for water, fiber, and macronutrients that visually fill UI progress bars to keep users accountable.
+- **📈 Weekly Progress Tracking:**
+  - Secure, cloud-backed logging for weight, chest, and waist measurements.
+  - Smooth, interactive data visualization using Recharts.
+- **📱 Progressive Web App (PWA):**
+  - Installable native-app feel with full-screen mobile layouts, strict max-width rendering, and bottom navigation.
+- **🛡️ Secure Authentication:**
+  - Email/Password authentication with Row Level Security (RLS) ensuring absolute data privacy.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Framework:** [Next.js](https://nextjs.org/) (App Router, TypeScript)
+- **Styling:** [Tailwind CSS v4.3](https://tailwindcss.com/)
+- **Backend & Database:** [Supabase](https://supabase.com/) (PostgreSQL, Auth)
+- **Icons:** [Lucide React](https://lucide.dev/)
+- **Charts:** [Recharts](https://recharts.org/)
+
+---
+
+## 🚀 Getting Started
+
+### 1. Git [fork](https://github.com/anburocky3/udal-workout-app/fork)/clone the repository
+
+```bash
+git clone https://github.com/anburocky3/udal-workout-app.git
+cd udal-workout-app
+```
+
+### 2. Install dependencies
+
+```bash
+npm install
+
+```
+
+### 3. Setup Supabase Environment Variables
+
+Create a `.env.local` file in the root directory and add your Supabase credentials:
+
+```env
+NEXT_PUBLIC_SUPABASE_URL=
+NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY=
+```
+
+### 4. Database Setup
+
+Ensure you have the Supabase CLI installed, then push the database schema to your project:
+
+```bash
+npx supabase login
+npx supabase link --project-ref your-project-ref-id
+npx supabase db push
+
+```
+
+### 5. Run the development server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser to view the application.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🗺️ Roadmap / Upcoming Features
 
-## Learn More
+- [ ] **Offline Mode Sync:** Complete Serwist service worker integration to allow logging measurements while offline.
+- [ ] **1-on-1 Challenge Duels:** Add social features allowing users to challenge a friend to a percentage-based weight loss duel over 4, 8, or 12 weeks.
+- [ ] **Photo Transformation Tracker:** Side-by-side ghost-overlay photo comparisons.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📄 License
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+This project is licensed under the MIT License - see the [LICENSE](/LICENSE) file for details.
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 👨‍💻 Author
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+**Anbuselvan Annamalai (Anbu)**
+
+Head of Product Development @ **CyberDude Networks Private Limited**
+
+_Building software architectures since December 2016._
